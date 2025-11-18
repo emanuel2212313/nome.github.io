@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BatTech #17742</title>
 
+  <!-- IMPORTAR O CSS EXTERNO -->
+  <link rel="stylesheet" href="styler.css">
+
   <!-- ===== ESTILOS GERAIS ===== -->
   <style>
     :root {
@@ -125,22 +128,6 @@
       box-shadow: 0 0 20px rgba(245,196,0,0.7);
     }
 
-    /* ===== MEMBROS ===== */
-    .member-card {
-      background: var(--cinza);
-      padding: 20px;
-      border-radius: 10px;
-      border: 2px solid var(--amarelo);
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 0 10px rgba(245,196,0,0.4);
-    }
-
-    .member-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(245,196,0,0.8);
-    }
-
     /* ===== ÍCONES FLUTUANTES ===== */
     .social-floating {
       position: fixed;
@@ -211,7 +198,6 @@
 
   <div class="membros-container">
 
-    <!-- 1 -->
     <div class="membro-card">
       <img src="images/davi.jpg" alt="João Davi">
       <h3>João Davi</h3>
@@ -219,7 +205,6 @@
       <p class="bio">João Davi é engenheiro especializado em robótica e apaixonado por programação de sistemas autônomos.</p>
     </div>
 
-    <!-- 2 -->
     <div class="membro-card">
       <img src="images/Emanuel.jpg" alt="Emanuel">
       <h3>Emanuel</h3>
@@ -227,7 +212,6 @@
       <p class="bio">Emanuel trabalha com programação avançada e desenvolvimento de algoritmos para o robô da equipe.</p>
     </div>
 
-    <!-- 3 -->
     <div class="membro-card">
       <img src="images/Raycka.jpg" alt="Raycka">
       <h3>Raycka</h3>
@@ -235,7 +219,6 @@
       <p class="bio">Raycka lidera a equipe, coordenando estratégias e motivando todos durante competições.</p>
     </div>
 
-    <!-- 4 -->
     <div class="membro-card">
       <img src="images/Gustavo.jpg" alt="Gustavo">
       <h3>Gustavo</h3>
@@ -243,15 +226,13 @@
       <p class="bio">Gustavo atua no design mecânico e otimização do robô, garantindo eficiência e estabilidade.</p>
     </div>
 
-    <!-- 5 -->
     <div class="membro-card">
       <img src="images/Massami.jpg" alt="Massami">
       <h3>Massami</h3>
       <p class="funcao">Gestor de Projetos</p>
-      <p class="bio">Massami organiza os cronogramas e gerencia recursos, garantindo que tudo ocorra dentro do esperado.</p>
+      <p class="bio">Massami organiza os cronogramas, gerencia recursos e garante que os projetos estejam dentro do prazo.</p>
     </div>
 
-    <!-- 6 -->
     <div class="membro-card">
       <img src="images/santos.jpg" alt="Pedro Santos">
       <h3>Pedro Santos</h3>
@@ -261,7 +242,6 @@
 
   </div>
 </section>
-
 
   <!-- ===== PROJETOS ===== -->
   <section id="projetos">
