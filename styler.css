@@ -20,8 +20,8 @@ body {
 header {
   background: var(--amarelo);
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 30px;
   position: sticky;
   top: 0;
@@ -29,18 +29,14 @@ header {
 }
 
 header img {
-  height: 60px;
+  height: 55px;
 }
 
 nav a {
   margin-left: 20px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
   color: #000;
-}
-
-nav a:hover {
-  color: #333;
 }
 
 /* ===== HERO ===== */
@@ -49,8 +45,8 @@ nav a:hover {
   background: url("https://images.unsplash.com/photo-1527689368864-3a821dbccc34") center/cover;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 #hero::after {
@@ -70,10 +66,6 @@ nav a:hover {
   color: var(--amarelo);
 }
 
-.hero-content p {
-  font-size: clamp(1em, 3vw, 1.4em);
-}
-
 /* ===== SEÇÕES ===== */
 section {
   padding: 60px 40px;
@@ -82,8 +74,6 @@ section {
 
 h2 {
   color: var(--amarelo);
-  font-size: 2.3em;
-  margin-bottom: 20px;
 }
 
 /* ===== MEMBROS ===== */
@@ -105,7 +95,6 @@ h2 {
 
 .membro-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(245,196,0,0.8);
 }
 
 .membro-card img {
@@ -114,19 +103,6 @@ h2 {
   border-radius: 50%;
   border: 3px solid var(--amarelo);
   object-fit: cover;
-}
-
-.membro-card h3 {
-  color: var(--amarelo);
-}
-
-.funcao {
-  font-weight: bold;
-}
-
-.bio {
-  font-size: 14px;
-  color: #ccc;
 }
 
 /* ===== GALERIA ===== */
@@ -138,13 +114,13 @@ h2 {
 
 .galeria-item {
   height: 200px;
+  border: 2px solid var(--amarelo);
+  border-radius: 12px;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
-  border: 2px solid var(--amarelo);
 }
 
-/* ===== SOCIAL FLOATING ===== */
+/* ===== SOCIAL ===== */
 .social-floating {
   position: fixed;
   right: 20px;
@@ -168,4 +144,16 @@ footer {
   background: var(--cinza);
   padding: 30px;
   border-top: 3px solid var(--amarelo);
+}
+
+/* ===== ANIMAÇÃO AO SCROLL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
